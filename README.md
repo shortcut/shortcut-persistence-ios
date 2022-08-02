@@ -1,1 +1,3 @@
-# shortcut-persistance-ios
+# ShortcutPersistence
+
+A description of this package.
