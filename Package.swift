@@ -9,10 +9,10 @@ let package = Package(
     products: [
         .library(
             name: "ShortcutPersistence",
-            targets: ["ShortcutPersistence"]),
+            targets: ["ShortcutPersistence"])
     ],
     dependencies: [
-        .package(url: "https://github.com/stephencelis/SQLite.swift.git", .exact("0.13.1"))
+        .package(url: "https://github.com/stephencelis/SQLite.swift.git", exact: "0.13.1")
     ],
     targets: [
         .target(
@@ -21,6 +21,6 @@ let package = Package(
                 .product(name: "SQLite", package: "SQLite.swift")]),
         .testTarget(
             name: "ShortcutPersistenceTests",
-            dependencies: ["ShortcutPersistence"]),
+            dependencies: ["ShortcutPersistence"])
     ]
 )
