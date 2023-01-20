@@ -9,6 +9,6 @@ enum PersistenceModelError: Error {
 enum StorageContextError: Error {
     case objectCouldNotBeSaved(Error)
     case objectCouldNotBeDeleted(Error)
-    case unknowDeleteError
+    case unknownDeleteError
     case datastoreConnectionError
 }

@@ -143,7 +143,7 @@ final class SQLiteStrategy: ILocalStrategy {
             do {
                 let tmp = try db.run(query.delete())
                 guard tmp == 1 else {
-                    throw StorageContextError.unknowDeleteError
+                    throw StorageContextError.unknownDeleteError
                 }
             } catch let error {
                 throw StorageContextError.objectCouldNotBeDeleted(error)
